@@ -5,11 +5,16 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+DOCKERPATH=rozalina/devobsproj
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+docker tag devops $DOCKERPATH
+
+docker login
+echo "Docker ID and Image: $DOCKERPATH"
 
 # Step 3:
 # Push image to a docker repository
+docker push $DOCKERPATH
+

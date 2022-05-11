@@ -1,0 +1,11 @@
+voclabs:~/environment/project-ml-microservice-kubernetes/project-ml-microservice-kubernetes (main) $ ./run_kubernetes.sh 
+NAME       STATUS   ROLES                  AGE   VERSION
+minikube   Ready    control-plane,master   41m   v1.23.3
+Error from server (AlreadyExists): pods "devops" already exists
+NAME                     READY   STATUS             RESTARTS        AGE
+devops                   0/1     CrashLoopBackOff   10 (53s ago)    14m
+devops-85845d6c8-8p9lz   1/1     Running            1 (9m24s ago)   30m
+devops-85845d6c8-8p9lz
+Forwarding...
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
