@@ -8,4 +8,8 @@ devops-85845d6c8-8p9lz   1/1     Running            1 (9m24s ago)   30m
 devops-85845d6c8-8p9lz
 Forwarding...
 Forwarding from 0.0.0.0:8000 -> 80
+<<<<<<< HEAD
 Handling connection for 8000
+=======
+Handling connection for 8000
+>>>>>>> 9358ffdee300256b63c039e6b0c1b4e6dfc6089d
