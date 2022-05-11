@@ -20,6 +20,7 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: |
             echo $PWD
+            ls -lh
             cd project-ml-microservice-kubernetes/project-ml-microservice-kubernetes
             echo $PWD
             python3 -m venv venv
