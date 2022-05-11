@@ -11,7 +11,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "/project-ml-microservice-kubernetes/project-ml-microservice-kubernetes/requirements.txt" }}
+            - v1-dependencies-{{ checksum "/project-ml-microservice-kubernetes/requirements.txt" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
@@ -21,7 +21,7 @@ jobs:
           command: |
             echo $PWD
             ls -lh
-            cd project-ml-microservice-kubernetes/project-ml-microservice-kubernetes
+            cd project-ml-microservice-kubernetes
             echo $PWD
             python3 -m venv venv
             . venv/bin/activate
